@@ -30,7 +30,7 @@ function Head() {
                 isActive("/Projects") ? "active" : ""
               }`}
             >
-              Проэкты
+              Проекты
             </button>
           </li>
           <li>
