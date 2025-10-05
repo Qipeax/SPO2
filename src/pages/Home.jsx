@@ -1,10 +1,10 @@
-import Head from "../components/Head.jsx";
+import Header from "../components/Header.jsx";
 
 function Home() {
   return (
     <>
       <header>
-        <Head />
+        <Header />
       </header>
     </>
   );
