@@ -1,17 +1,17 @@
-import React from 'react'
-import { useAuth } from "../contexts/AuthContext"
+import React from "react";
+import { useAuth } from "../contexts/AuthContext";
 
 function Header() {
-  const { user, logout } = useAuth()
+  const { user, logout } = useAuth();
 
   const getRoleName = (role) => {
     const roles = {
-      manager: 'Менеджер',
-      engineer: 'Инженер',
-      observer: 'Наблюдатель'
-    }
-    return roles[role] || role
-  }
+      manager: "Менеджер",
+      engineer: "Инженер",
+      observer: "Наблюдатель",
+    };
+    return roles[role] || role;
+  };
 
   return (
     <header className="header">
@@ -29,7 +29,7 @@ function Header() {
         </button>
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
