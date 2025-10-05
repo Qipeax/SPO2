@@ -1,6 +1,5 @@
-// src/components/Header.jsx
 import React from 'react'
-import { useAuth } from '../contexts/AuthContext'
+import { useAuth } from "../contexts/AuthContext"
 
 function Header() {
   const { user, logout } = useAuth()
