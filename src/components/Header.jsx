@@ -16,13 +16,13 @@ function Header() {
   return (
     <header className="header">
       <div className="header-left">
-        <h1>СистемаКонтроля</h1>
+        <h1>Квикенд</h1>
         <span>Управление строительными дефектами</span>
       </div>
       <div className="header-right">
         <div className="user-info">
           <span>{user?.name}</span>
-          <span className="user-role">({getRoleName(user?.role)})</span>
+          <span className="user-role"> ({getRoleName(user?.role)})</span>
         </div>
         <button onClick={logout} className="logout-btn">
           Выйти

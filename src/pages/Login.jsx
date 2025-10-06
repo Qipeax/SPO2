@@ -27,7 +27,7 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-form">
-        <h1>СистемаКонтроля</h1>
+        <h1>Система Контроля</h1>
         <p>Войдите в систему управления строительными дефектами</p>
         
         <form onSubmit={handleSubmit}>

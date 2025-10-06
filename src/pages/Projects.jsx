@@ -152,7 +152,7 @@ function Projects() {
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <div className="project-info">
-              <span>📍 {project.address}</span>
+              <span> 📍 {project.address}</span>
               <span>
                 📅 {project.startDate} - {project.endDate}
               </span>
