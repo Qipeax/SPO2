@@ -13,6 +13,7 @@ import Projects from "./pages/Projects";
 import Layout from "./components/Layout";
 import "./App.css";
 import Defects from "./pages/Defects";
+import DefectDetail from './pages/DefectDetail'
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function AppContent() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="projects" element={<Projects />} />
           <Route path="defects" element={<Defects />} />
+          <Route path="defects/:id" element={<DefectDetail />} />
         </Route>
       </Routes>
     </div>
