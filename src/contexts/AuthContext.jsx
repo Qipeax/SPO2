@@ -22,21 +22,21 @@ export function AuthProvider({ children }) {
     const mockUsers = [
       {
         id: 1,
-        email: "manager@system.ru",
+        email: "manager@kvikend.ru",
         password: "123",
         role: "manager",
         name: "Злой Менеджеров",
       },
       {
         id: 2,
-        email: "engineer@system.ru",
+        email: "engineer@kvikend.ru",
         password: "123",
         role: "engineer",
         name: "Инженер Тимфортресович",
       },
       {
         id: 3,
-        email: "observer@system.ru",
+        email: "observer@kvikend.ru",
         password: "123",
         role: "observer",
         name: "Сталкер Смотрячевич",

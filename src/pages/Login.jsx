@@ -27,12 +27,12 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-form">
-        <h1>Система Контроля</h1>
+        <h1>Квикенд</h1>
         <p>Войдите в систему управления строительными дефектами</p>
         
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Email:</label>
+            <label>Адрес электронной почты в домене kvikend.ru:</label>
             <input
               type="email"
               value={email}
@@ -62,9 +62,9 @@ function Login() {
 
         <div className="demo-accounts">
           <h3>Демо доступы:</h3>
-          <p>Менеджер: manager@system.ru / 123</p>
-          <p>Инженер: engineer@system.ru / 123</p>
-          <p>Наблюдатель: observer@system.ru / 123</p>
+          <p>Менеджер: manager@kvikend.ru / 123</p>
+          <p>Инженер: engineer@kvikend.ru / 123</p>
+          <p>Наблюдатель: observer@kvikend.ru / 123</p>
         </div>
       </div>
     </div>
