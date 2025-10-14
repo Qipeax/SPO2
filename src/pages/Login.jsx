@@ -61,7 +61,7 @@ function Login() {
         </form>
 
         <div className="demo-accounts">
-          <h3>Демо доступы:</h3>
+          <h3>Чтоб не повторить судьбу Димы:</h3>
           <p>Менеджер: manager@kvikend.ru / 123</p>
           <p>Инженер: engineer@kvikend.ru / 123</p>
           <p>Наблюдатель: observer@kvikend.ru / 123</p>

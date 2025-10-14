@@ -1,21 +1,21 @@
 let defects = [
   {
     id: "1",
-    title: "Трещина в несущей стене",
-    description: "Обнаружена вертикальная трещина в несущей стене на 3 этаже",
+    title: "Нет плитки",
+    description: "Отсутсвует часть плитки в полу",
     projectId: "1",
     priority: "high",
     status: "in_progress",
     assigneeId: "2",
     createdBy: "1",
-    createdAt: "2024-01-15",
-    dueDate: "2024-02-01",
+    createdAt: "2025-10-05",
+    dueDate: "2025-12-31",
     comments: [
       {
         id: "1",
-        text: "Требуется срочный осмотр конструктора",
+        text: "По-моему это проблемы жкх",
         authorId: "1",
-        createdAt: "2024-01-15T10:30:00",
+        createdAt: "2025-10-05T17:30:26",
       },
     ],
   },
@@ -24,18 +24,18 @@ let defects = [
 let projects = [
   {
     id: "1",
-    name: 'ЖК "Северный"',
-    description: "Многоэтажный жилой комплекс",
-    address: "ул. Северная, 123",
-    startDate: "2024-01-01",
-    endDate: "2024-12-31",
+    name: 'УЛ Удальцова',
+    description: "Многоэтажный дом",
+    address: "ул Удальцова Д.89",
+    startDate: "2025-10-05",
+    endDate: "2025-12-31",
   },
 ];
 
 let users = [
-  { id: "1", name: "Иван Менеджеров", role: "manager" },
-  { id: "2", name: "Петр Инженеров", role: "engineer" },
-  { id: "3", name: "Сергей Наблюдателей", role: "observer" },
+  { id: "1", name: "Злой Менеджеров", role: "manager" },
+  { id: "2", name: "Инженер Тимфортресович", role: "engineer" },
+  { id: "3", name: "Сталкер Смотрячевич", role: "observer" },
 ];
 
 export const getDefects = async () => {
@@ -54,7 +54,6 @@ export const updateDefect = async (id, data) => {
   return new Promise((resolve) =>
     setTimeout(() => {
       if (typeof id === "object") {
-        // Create new defect
         const newDefect = {
           ...id,
           id: Date.now().toString(),
@@ -62,7 +61,6 @@ export const updateDefect = async (id, data) => {
         defects.push(newDefect);
         resolve(newDefect);
       } else {
-        // Update existing defect
         const index = defects.findIndex((d) => d.id === id);
         if (index !== -1) {
           defects[index] = { ...defects[index], ...data };
